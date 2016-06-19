@@ -1,8 +1,8 @@
-/* 
+
 body{
   height: 100%;
-  margin: 0 0 145px; 
 } 
+
 /* прибиваем футер */ 
 
 /* footer {
@@ -28,7 +28,7 @@ body{
 
  .welcome_wrap{
   background: url('/assets/img/welkome.jpg') no-repeat center;
-  height: 100%;
+  height: 900px;
   width: 100%;
   position: relative;
  }
@@ -39,13 +39,18 @@ body{
 
  .welcome-block{
   background-color: rgba(255, 255, 255, 0.8);
-  width: 350px;
-  height: 395px;
+  width: 380px;
+  height: 400px;
   margin: 0 auto;
+  margin-top: 180px;
  }
   .welcome-block .sozial_link{
-    fill: green;
+    fill: #16c2aa;
   }
+li.welcome_sozial_item{
+  display: inline-block;
+  list-style: none;
+}
 .welcome-block .avatar{
   text-align: center; 
 }
@@ -60,7 +65,7 @@ body{
  }
  p.create{
   position: absolute;
-  bottom: 44px;
+  bottom: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
