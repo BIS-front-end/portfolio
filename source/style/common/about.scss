@@ -1,18 +1,26 @@
-/* body{
-  height: 100%;
-  margin: 0 0 145px; 
-}  */
-/* прибиваем футер */ 
+html,body{
 
-/* footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 145px; // фиксированая высота футера
+    min-height: 100%;
+}
+
+footer {
+  
+    height: 150px; 
+    background-color: rgba(85, 91, 94, 0.8)
 } 
- */
  
+ .content {
+  min-height: 100%;
+  margin-bottom: -150px; // Равно высоте футера
+}
+
+.content:after {
+  content: '';
+  display: block;
+  height: 150px; // Равно высоте футера
+}
+
+
 .header{
   background: url('/assets/img/icons/portfolio_header.svg') no-repeat center, url('/assets/img/header.jpg') no-repeat center;
   height: 600px;
