@@ -24,21 +24,30 @@
 .sozial_link{
   margin-right: 30px;
 }
-.avatar{
+
+header .avatar{
   text-align: center;
   position: absolute;
   bottom: 150px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+.avatar_pref{
+  color: #fff;
+  margin: 0;
+  opacity: 0.7;
+  font-family: "roboto", "Arial Narrow", sans-serif;
 }
-.avatar_name{
+
+}
+ .avatar_name{
   font-size: 35px;
   color: #fff;
   margin: 0;
   padding-top: 10px;
   font-family: "roboto", "Arial Narrow", sans-serif;
 }
-header .avatar_pref{
+.avatar_pref{
   color: #fff;
   margin: 0;
   opacity: 0.7;

@@ -28,7 +28,7 @@ body{
 
  .welcome_wrap{
   background: url('/assets/img/welkome.jpg') no-repeat center;
-  height: 900px;
+  height: 100%;
   width: 100%;
   position: relative;
  }
@@ -41,18 +41,43 @@ body{
   background-color: rgba(255, 255, 255, 0.8);
   width: 380px;
   height: 400px;
-  margin: 0 auto;
-  margin-top: 180px;
+  /* margin: 0 auto;
+  margin-top: 180px; */
+    position: absolute;
+ top: 50%;
+ left: 50%;
+ margin: -190px 0 0 -200px;
+ .avatar{
+  text-align: center;
+  padding-top: 40px;
  }
-  .welcome-block .sozial_link{
+  .sozial_link{
     fill: #16c2aa;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
-li.welcome_sozial_item{
+ }
+
+.welcome_btn{
+ width: 100%;
+ padding: 0;
+ margin: 0;
+}
+
+li.welcome_sozial_item, .welcome_btn_item{
   display: inline-block;
   list-style: none;
+   padding: 0;
 }
-.welcome-block .avatar{
-  text-align: center; 
+
+.welcome_btn-green{
+  display: inline-block;
+  background-color: rgba(8, 172, 153, 0.5);
+  padding: 12px 36px;
+}
+
+.welcome_btn-green:hover{
+  background-color: rgba(6, 137, 129, 0.5);
 }
  .entry_link{
   display: inline-block;
@@ -65,7 +90,8 @@ li.welcome_sozial_item{
  }
  p.create{
   position: absolute;
-  bottom: 40px;
+  bottom: 5px;
+  /* bottom: 40px; */
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
