@@ -1,0 +1,31 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    
+    //- assets/img/icons/sozial-vk - путь к картинкам
+    .welcome_wrap
+        .entry.clearfix
+            a(href="" class="entry_link") Авторизоваться
+        .welcome-block
+            .avatar
+                .avatar_foto-wrap
+                    img(src="assets/img/avatar.jpg", alt="аватар" class="avatar_foto" width="140" height='140')
+                 p.avatar_name Белова Ирина Сергеевна
+                 p.avatar_pref Личный сайт веб разработчика
+                .welcome_sozial
+                    a(href="")
+                    img(src="assets/img/icons/vk.svg", alt="" class="sozial_link sozial-vk")
+                    a(href="")
+                    img(src="assets/img/icons/github.svg", alt="" class="sozial_link sozial-git")
+                    a(href="")
+                    img(src="assets/img/icons/in.svg", alt="" class="sozial_link sozial_link-hover sozial-in")
+                .welcome_btn-block
+                   a(href="" class="btn welcome_btn") Мои работы
+                   a(href="" class="btn welcome_btn") Обо мне 
+                   a(href="" class="btn welcome_btn") Блог
+        p.create © Белова Ирина | создано с любовью в LoftSchool | 2016

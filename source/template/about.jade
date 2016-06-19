@@ -1,0 +1,48 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    
+    //- assets/img/icons/sozial-vk - путь к картинкам
+    
+    header.header
+        .header_link.clearfix
+            .header_sozial
+                a(href="")
+                img(src="assets/img/icons/vk.svg", alt="" class="sozial_link sozial-vk")
+                a(href="")
+                img(src="assets/img/icons/github.svg", alt="" class="sozial_link sozial-git")
+                a(href="")
+                    img(src="assets/img/icons/in.svg", alt="" class="sozial_link sozial_link-hover sozial-in")
+            .header_menu
+                img(src="assets/img/icons/hamburger.svg", alt="" class="sandwich")
+        .avatar
+            img(src="assets/img/avatar.jpg", alt="аватар" class="avatar_foto" width="140" height='140')
+            p.avatar_name Белова Ирина Сергеевна
+            p.avatar_pref Личный сайт веб разработчика
+        .arrow
+            img(src="assets/img/icons/arrow_down.svg", alt="вниз")
+    .works
+    .slider
+    .recall
+    form(class="connection" action="")
+        legend Связаться со мной
+        input(type='text' name='name')
+        input(type='text' name='e-mail')
+        input(type='submit' name='pull')
+        input(type='reset' name='reset')
+    footer.footer
+        div.footer_menu
+            ul
+                li: a(href="") Мои работы
+                li: a(href="") Обо мне 
+                li: a(href="") Блог 
+                li: a(href="") Авторизация
+//- <svg width="270" height="270" class="g-circles">
+//- <circle r="115" cx="135" cy="135" stroke="#ccc" fill="none"/>
+//- <circle r="115" cx="135" cy="135" stroke="crimson" class="sector"/>
+//- </svg>
