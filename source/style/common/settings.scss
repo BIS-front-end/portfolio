@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url(../fonts/fontawesome-webfont.woff2) format('woff2'),
+         url(../fonts/fontawesome-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bernier_regularregular';
+    src: url(../fonts/fontawesome-webfont.woff2) format('woff2'),
+         url(../fonts/fontawesome-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/fontawesome-webfont.woff2) format('woff2'),
+         url(../fonts/fontawesome-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font-family: 'Roboto', sans-serif; */
+
+html {
+ box-sizing: border-box;
+ font-family: "fontawesomeregular", "Arial Narrow", sans-serif;
+ font-size: 16px;
+ height: 100%;
+ position: relative;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.clearfix:before,
+.clearfix:after {
+ content: "";
+ display: table;
+}
+.clearfix:after {
+ clear: both;
+} 
+
+/* Эффекты при наведении */
+  .sozial_link, .arrow_down, .sandwich{
+  opacity:0.5;
+ }
+
+ .sozial_link:hover, .arrow_down:hover, .sandwich:hover{
+  opacity:1;
+ }
