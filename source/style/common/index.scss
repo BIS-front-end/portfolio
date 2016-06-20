@@ -3,30 +3,7 @@ body{
   height: 100%;
 } 
 
-/* прибиваем футер */ 
-
-/* footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 145px; // фиксированая высота футера
-} 
- */
-
-
-/* .g-circles {
- fill: none;
- stroke-width: 25;
- }
- .sector {
- stroke-dasharray: 722;
- stroke-dashoffset: 361;
- transition: all 1s;
- } */
-
-
- .welcome_wrap{
+ .welcome_wrap, .login_container{
   background: url('/assets/img/welkome.jpg') no-repeat center;
   height: 100%;
   width: 100%;
@@ -51,34 +28,56 @@ body{
   text-align: center;
   padding-top: 40px;
  }
-  .sozial_link{
+.sozial_link{
     fill: #16c2aa;
     margin-top: 21px;
     margin-bottom: 21px;
   }
  }
 
+
 .welcome_btn{
- width: 100%;
+ display: flex;
+ justify-content: space-between;
  padding: 0;
  margin: 0;
+ text-align: center;
+
 }
 
 li.welcome_sozial_item, .welcome_btn_item{
   display: inline-block;
   list-style: none;
-   padding: 0;
+  padding: 0;
 }
 
-.welcome_btn-green{
+.btn-green{
+  display: inline-block;
+  background-color: rgba(8, 172, 153, 0.5);
+  padding: 12px 37px;
+  color: #fff;
+}
+
+.btn-green:hover{
+  background-color: rgba(6, 137, 129, 0.5);
+}
+
+
+.login_container  {
+ 
+ .btn-green{
   display: inline-block;
   background-color: rgba(8, 172, 153, 0.5);
   padding: 12px 36px;
+  width: 189px;
+  font-weight: 550;
+}
+.btn-green:hover{
+  background-color: rgba(6, 137, 129, 0.5);
+} 
+
 }
 
-.welcome_btn-green:hover{
-  background-color: rgba(6, 137, 129, 0.5);
-}
  .entry_link{
   display: inline-block;
   float: right;
@@ -97,3 +96,61 @@ li.welcome_sozial_item, .welcome_btn_item{
   color: #fff;
   opacity: 0.7;
  }
+
+
+form{
+  text-align: center;
+}
+
+input.login {
+background-image: url('/assets/img/icons/login.svg');
+background-repeat: no-repeat;
+background-position: 15px center;
+background-size: 15px 15px;
+width: 340px;
+border-radius: 5px;
+padding-left: 5px;
+height: 45px;
+border-radius: 5px;
+padding-left: 60px;
+border: none;
+position: relative;
+} 
+
+input.pass {
+background-image: url('/assets/img/icons/password.svg');
+background-position: 15px center;
+background-size: 15px 15px;
+background-repeat: no-repeat;
+width: 340px;
+border-radius: 5px;
+padding-left: 5px;
+height: 45px;
+border-radius: 5px;
+padding-left: 60px;
+border: none;
+}
+.legend{
+  font-family: "bernier_regularregular";
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #455a64;
+}
+
+.legend:after,  .legend:before {
+    content: "-";
+    display: inline-block;
+    color: #c5cbcd;
+    padding: 10px;
+}
+
+label{
+  font-family: "roboto";
+  font-size: 16px;
+  color: #667780;
+}
+.chek_label{
+  font-weight: bold;
+  color:#455a64;
+}

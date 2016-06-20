@@ -1,0 +1,33 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    
+    //- assets/img/icons/sozial-vk - путь к картинкам
+    .login_container
+        .welcome-block
+          form(action="#")
+            legend.legend Авторизуйтесь
+            p
+              input(type="text" placeholder="Логин" class="login")
+            p
+              input(type="password" placeholder="Пароль" class="pass")
+            p
+              input(type="checkbox" name=" " id="people")
+              label(for="people") Я человек
+            label.chek_label Вы точно не робот?
+            p
+              input(type="radio" name=" " id="chek_yes") 
+              label.chek_yes(for="chek_yes") Да
+              input(type="radio" name=" " id="chek_no")
+              label(for="chek_no") Не уверен
+          ul.welcome_btn
+            li.welcome_btn_item
+              a(href="index.html" class="btn btn-green") На главную
+            li.welcome_btn_item
+              a(href="" class="btn btn-green") Войти
+        p.create © Белова Ирина | создано с любовью в LoftSchool | 2016
