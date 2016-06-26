@@ -53,7 +53,7 @@
          
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.736px" height="16.435px" viewBox="0 0 42.736 27.435" enable-background="new 0 0 42.736 27.435" xml:space="preserve">
         <g>
-        <path fill="#FFFFFF" class ="arrow_down" d="M22.563,26.938c-0.663,0.663-1.724,0.663-2.387,0L0.498,7.286c-0.663-0.663-0.663-1.75,0-2.413L4.9,0.497c0.663-0.663,1.724-0.663,2.387,0l14.082,14.082L35.45,0.497c0.663-0.663,1.725-0.663,2.388,0l4.401,4.376c0.663,0.663,0.663,1.75,0,2.413L22.563,26.938z"/>
+        <path fill="#FFFFFF" class ="arrow_svg" d="M22.563,26.938c-0.663,0.663-1.724,0.663-2.387,0L0.498,7.286c-0.663-0.663-0.663-1.75,0-2.413L4.9,0.497c0.663-0.663,1.724-0.663,2.387,0l14.082,14.082L35.45,0.497c0.663-0.663,1.725-0.663,2.388,0l4.401,4.376c0.663,0.663,0.663,1.75,0,2.413L22.563,26.938z"/>
         </g></a></svg>
       <div class="box_wrap">
         <div class="box_works">
@@ -64,25 +64,102 @@
         </div>
       </div>
     </header>
-    <div class="content"> 
-      <div class="works">
-        <h1 class="works__title">Мои работы</h1>
-        <section class="slider clearfix">
-          <div class="slider__left">
-            <div class="slider__display"><img src="assets/img/slider_big.jpg" alt=""></div>
-            <div class="slider__info">
-              <div class="title">Сайт школы онлайн образования</div>
-              <div class="skills">html, css, javascript</div>
-              <div class="slider__btn"><a href="#" class="btn">Посмотреть сайт</a></div>
+    <div class="works">
+      <h1 class="heading_item heading-text">Мои работы</h1>
+      <section class="slider clearfix">
+        <div class="slider__left">
+          <div class="slider__display"><img src="assets/img/slider_big.jpg" alt=""></div>
+          <div class="slider__info">
+            <div class="title">Сайт школы онлайн образования</div>
+            <div class="skills">html, css, javascript</div>
+            <div class="slider__btn"><a href="#" class="btn">Посмотреть сайт</a></div>
+          </div>
+        </div>
+        <div class="slider__right">
+          <div class="slider__controls"><a href="" class="slider__controls-item slider__controls-item_prev"><img src="assets/img/icons/portf_arrow_down.svg" alt=""></a><a href="#" class="slider__controls-item slider__controls-item_next"><img src="assets/img/icons/portf_arrow_up.svg" alt=""></a></div>
+        </div>
+      </section>
+    </div>
+    <div class="people">
+      <div class="heading_box lower">
+        <div class="heading_item heading-text">Что обо мне<br>говорят</div>
+      </div>
+      <div class="feedback_box clearfix">
+        <div class="feedback_item">
+          <div class="feedback_quotes">&#145;&#145;</div>
+          <div class="feedback_text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+          <div class="feedback_person clearfix">
+            <div class="person_ava"><img src="assets/img/person1.jpg" alt="portrait" class="ava_img"></div>
+            <div class="person_name">
+              <div class="name">Ковальчук Дмитрий</div>
+              <div class="position">основатель Loftschool</div>
             </div>
           </div>
-          <div class="slider__right">
-            <div class="slider__controls"><a href="" class="slider__controls-item slider__controls-item_prev"><img src="assets/img/icons/portf_arrow_down.svg" alt=""></a><a href="#" class="slider__controls-item slider__controls-item_next"><img src="assets/img/icons/portf_arrow_up.svg" alt=""></a></div>
+        </div>
+        <div class="feedback_item feedback_right">
+          <div class="feedback_quotes">&#145;&#145;</div>
+          <div class="feedback_text">Этот код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!</div>
+          <div class="feedback_person clearfix">
+            <div class="person_ava"><img src="/assets/img/person2.jpg" alt="portrait" class="ava_img"></div>
+            <div class="person_name">
+              <div class="name">Зар Захаров</div>
+              <div class="position">главный преподаватель</div>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
-      <div class="about_me"></div>
+      <div class="form_box">
+        <div class="form_container">
+          <div class="form_heading">
+            <div class="heading_item heading-text">Связаться со мной</div>
+          </div>
+          <form action="" method="" class="form_list">
+            <input type="text" placeholder="Имя" class="form_item yourname">
+            <input type="email" placeholder="Email" class="form_item youremail">
+            <textarea type="text" placeholder="Ваше сообщение" class="form_item yourmessage"></textarea>
+            <ul class="welcome_btn">
+              <li class="welcome_btn_item">
+                <button type="submit" value="Отправить" class="submit btn btn-green">Отправить</button>
+              </li>
+              <li class="welcome_btn_item">
+                <button type="reset" value="Очистить" class="reset btn btn-green">Очистить</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="footer_content clearfix">
+        <div class="footer_copy">
+          <div class="footer_copy_loft">Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.</div>
+          <div class="footer_copy_copy opacity-5">© Владимир Астахов<br>Создано с любовью в LoftSchool | 2016</div>
+        </div>
+        <div class="footer_menu-social">
+          <div class="footer_menu">
+            <ul class="menu_list clearfix">
+              <li class="menu_item"><a href="works.html">Мои работы</a></li>
+              <li class="menu_item"><a href="about.html">Обо мне</a></li>
+              <li class="menu_item"><a href="blog.html">Блог</a></li>
+              <li class="menu_item"><a href="login.html">Авторизация</a></li>
+            </ul>
+          </div>
+          <div class="footer_social">
+            <ul class="social_list clearfix">
+              <li class="social_item vk"><a href="https://vk.com/vladimir_slepkov" class="social_link"><img src="assets/img/vk.svg"></a></li>
+              <li class="social_item gh"><a href="https://github.com/slepkov" class="social_link"><img src="assets/img/github.svg"></a></li>
+              <li class="social_item li"><a href="https://www.linkedin.com/in/slepkov" class="social_link"><img src="assets/img/in.svg"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_contacts opacity-5">
+          <div class="contacts_box"><a href="skype:skype_kdn?add" class="contacts_link">skype_kdn</a></div>
+          <div class="contacts_box"><a href="mailto:astahov@gmail.com" class="contacts_link">astahov@gmail.com</a></div>
+          <div class="contacts_box"><a href="tel:+7 931 200 93 24" class="contacts_link">+7 931 200 93 24</a></div>
+          <div class="contacts_box">Новосибирск, ул. Инская, д.14</div>
+        </div>
+      </div>
+    </footer>
     <footer class="footer">
       <div class="footer_menu">
         <ul>

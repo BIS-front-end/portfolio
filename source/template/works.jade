@@ -48,7 +48,7 @@ html
         a(href="google.com" class="arrow")  
              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.736px" height="16.435px" viewBox="0 0 42.736 27.435" enable-background="new 0 0 42.736 27.435" xml:space="preserve">
              <g>
-             <path fill="#FFFFFF" class ="arrow_down" d="M22.563,26.938c-0.663,0.663-1.724,0.663-2.387,0L0.498,7.286c-0.663-0.663-0.663-1.75,0-2.413L4.9,0.497c0.663-0.663,1.724-0.663,2.387,0l14.082,14.082L35.45,0.497c0.663-0.663,1.725-0.663,2.388,0l4.401,4.376c0.663,0.663,0.663,1.75,0,2.413L22.563,26.938z"/>
+             <path fill="#FFFFFF" class ="arrow_svg" d="M22.563,26.938c-0.663,0.663-1.724,0.663-2.387,0L0.498,7.286c-0.663-0.663-0.663-1.75,0-2.413L4.9,0.497c0.663-0.663,1.724-0.663,2.387,0l14.082,14.082L35.45,0.497c0.663-0.663,1.725-0.663,2.388,0l4.401,4.376c0.663,0.663,0.663,1.75,0,2.413L22.563,26.938z"/>
              </g>
             </svg>
         .box_wrap
@@ -57,9 +57,9 @@ html
                 <polygon points="0,0   0,86   530.8,86   517.8,75.5"></polygon>
                 <polygon points="1000,0   1000,86   530,86   500,75.5"></polygon>
                 </svg>
-    .content 
+
       .works
-        h1.works__title Мои работы
+        h1.heading_item.heading-text Мои работы
         section.slider.clearfix
             div.slider__left
                 div.slider__display
@@ -75,9 +75,77 @@ html
                         img(src="assets/img/icons/portf_arrow_down.svg" alt="")
                     a(href="#" class="slider__controls-item slider__controls-item_next")
                         img(src="assets/img/icons/portf_arrow_up.svg" alt="")
-
-       .about_me
-
+      .people
+            .heading_box.lower
+              .heading_item.heading-text Что обо мне<br>говорят
+            .feedback_box.clearfix
+              .feedback_item
+                .feedback_quotes &#145;&#145;
+                .feedback_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .feedback_person.clearfix
+                  .person_ava
+                    img.ava_img(src="assets/img/person1.jpg" alt="portrait")
+                  .person_name
+                    .name Ковальчук Дмитрий
+                    .position основатель Loftschool
+              .feedback_item.feedback_right
+                .feedback_quotes &#145;&#145;
+                .feedback_text Этот код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!
+                .feedback_person.clearfix
+                  .person_ava
+                    img.ava_img(src="/assets/img/person2.jpg" alt="portrait")
+                  .person_name
+                    .name Зар Захаров
+                    .position главный преподаватель
+            .form_box
+              .form_container
+                .form_heading
+                  .heading_item.heading-text Связаться со мной
+                form.form_list(action="" method="")
+                  input.form_item.yourname(type="text" placeholder="Имя")
+                  input.form_item.youremail(type="email" placeholder="Email")
+                  textarea.form_item.yourmessage(type="text" placeholder="Ваше сообщение")
+                  ul.welcome_btn
+                    li.welcome_btn_item
+                      button.submit(type="submit" value="Отправить" class="btn btn-green") Отправить
+                    li.welcome_btn_item
+                      button.reset(type="reset" value="Очистить" class="btn btn-green") Очистить
+    footer.footer
+      .footer_content.clearfix
+        .footer_copy
+          .footer_copy_loft Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.
+          .footer_copy_copy.opacity-5
+            © Владимир Астахов<br>Создано с любовью в LoftSchool | 2016
+        .footer_menu-social
+          .footer_menu
+            ul.menu_list.clearfix
+              li.menu_item
+                a(href="works.html") Мои работы
+              li.menu_item
+                a(href="about.html") Обо мне
+              li.menu_item
+                a(href="blog.html") Блог
+              li.menu_item
+                a(href="login.html") Авторизация
+          .footer_social
+            ul.social_list.clearfix
+              li.social_item.vk
+                a.social_link(href="https://vk.com/vladimir_slepkov")
+                  img(src="assets/img/vk.svg")
+              li.social_item.gh
+                a.social_link(href="https://github.com/slepkov")
+                  img(src="assets/img/github.svg")
+              li.social_item.li
+                a.social_link(href="https://www.linkedin.com/in/slepkov")
+                  img(src="assets/img/in.svg")
+        .footer_contacts.opacity-5
+          .contacts_box
+            a.contacts_link(href="skype:skype_kdn?add") skype_kdn
+          .contacts_box
+            a.contacts_link(href="mailto:astahov@gmail.com") astahov@gmail.com
+          .contacts_box
+            a.contacts_link(href="tel:+7 931 200 93 24") +7 931 200 93 24
+          .contacts_box Новосибирск, ул. Инская, д.14
 
     footer.footer
       div.footer_menu

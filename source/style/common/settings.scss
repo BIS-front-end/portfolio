@@ -55,30 +55,10 @@ a{
  }
 
 
-
-
  html {
   font-size: 16px;
 
-//  @include desktop {
-//    font-size: 16px;
-//  }
-//
-//  @include laptop {
-//    font-size: 15px;
-//  }
-//
-//  @include tablets {
-//    font-size: 14px;
-//  }
-//
-//  @include phones {
-//    font-size: 13px;
-//  }
 }
-
-
-
 
 
 .wrapper {
@@ -87,19 +67,7 @@ a{
   position: relative;
 }
 
-/* .wrapper:after {
-  content: "";
-  height: $footer-height;
-  display: block;
-}
 
-
-.container {
-  //width: $container-width;
-  margin: 0 auto;
-  max-width: 1000px;
-
-} */
 
 ul {
   padding: 0;
