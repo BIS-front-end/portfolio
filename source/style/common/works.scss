@@ -203,7 +203,7 @@ h1.title:after,  h1.title:before , .skills_title:after, .skills_title:before{
     font: 2.1875rem 'sansus_webissimoregular';
     color: #5d5a55;
     text-transform: uppercase;
-    padding-top: 15px;
+    padding-top: 36px;
     padding-bottom: 25px;
   }
 
@@ -232,14 +232,17 @@ h1.title:after,  h1.title:before , .skills_title:after, .skills_title:before{
 }
 .person_name{
 	padding-left: 20px;
+	position: relative;
+	padding-top: 25px;
 }
 .name{
 	font: 1rem 'robotobold';
-	font-weight: bold;
+	padding-bottom: 5px;
 }
 .positioin{
 	font: 1rem 'robotoregular';
 }
+
 .person_ava img{
 	border-radius: 50% 50%;
 }
@@ -248,4 +251,15 @@ textarea.form_item.yourmessage{
 	height: 140px;
 }
 
-
+.people{
+	position: relative;
+}
+.arrow_up{
+	position: absolute;
+	bottom: 215px;
+	left: 50%;
+	right: 50%;
+}
+.arrow_up img{
+	opacity:0.5;
+}

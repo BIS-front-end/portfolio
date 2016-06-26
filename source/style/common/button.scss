@@ -75,3 +75,24 @@ li.welcome_sozial_item, .welcome_btn_item{
     top: 0;
     left: 10px;
   }
+
+.works_wrap{
+   .reset, .submit{
+    width: 189px;
+    border-radius: 3px;
+    min-height:45px;
+    border:none;
+   }
+
+ .btn-green{
+  padding: 14px 36px;
+  width: 189px;
+  font-weight: 550;
+  background-color: rgb(38, 187, 170);
+}
+.btn-green:hover{
+  background-color: rgb(38, 139, 139);
+} 
+
+}
+ 
