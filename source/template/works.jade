@@ -8,8 +8,8 @@ html
 
     
     //- assets/img/icons/sozial-vk - путь к картинкам
-    
-    header.header
+    .works_wrap
+      header.header
         .header_link.clearfix
             ul.header_sozial
                 li.header_sozial_item
@@ -57,7 +57,6 @@ html
                 <polygon points="0,0   0,86   530.8,86   517.8,75.5"></polygon>
                 <polygon points="1000,0   1000,86   530,86   500,75.5"></polygon>
                 </svg>
-
       .works
         h1.heading_item.heading-text Мои работы
         section.slider.clearfix
@@ -110,7 +109,7 @@ html
                       button.submit(type="submit" value="Отправить" class="btn btn-green") Отправить
                     li.welcome_btn_item
                       button.reset(type="reset" value="Очистить" class="btn btn-green") Очистить
-    footer.footer
+      footer.footer
       .footer_content.clearfix
         .footer_copy
           .footer_copy_loft Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.
@@ -146,11 +145,4 @@ html
           .contacts_box
             a.contacts_link(href="tel:+7 931 200 93 24") +7 931 200 93 24
           .contacts_box Новосибирск, ул. Инская, д.14
-
-    footer.footer
-      div.footer_menu
-        ul
-          li: a(href="") Мои работы
-          li: a(href="") Обо мне 
-          li: a(href="") Блог
-          li: a(href="") Авторизация
+      footer.footer

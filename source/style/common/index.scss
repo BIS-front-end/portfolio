@@ -5,9 +5,10 @@ body{
 
  .welcome_wrap, .login_container{
   background: url('/assets/img/welkome.jpg') no-repeat center;
-  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
   width: 100%;
-  position: relative;
+  position: relative; 
  }
 
   .welcome-block  .avatar_name, .avatar_pref{
@@ -18,64 +19,40 @@ body{
   background-color: rgba(255, 255, 255, 0.8);
   width: 380px;
   height: 400px;
-  /* margin: 0 auto;
-  margin-top: 180px; */
-    position: absolute;
- top: 50%;
- left: 50%;
- margin: -190px 0 0 -200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -190px 0 0 -200px;
  .avatar{
   text-align: center;
   padding-top: 40px;
  }
+
+.avatar_name{
+  font-size: 35px;
+  color: #455a64;
+  margin: 0;
+  padding-top: 10px;
+  font-family: "roboto", "Arial Narrow", sans-serif;
+}
+.avatar_pref{
+  color: #808f96;
+  margin: 0;
+  opacity: 0.7;
+  font-family: "roboto", "Arial Narrow", sans-serif;
+}
+
 .sozial_link{
     fill: #16c2aa;
     margin-top: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 38px;
   }
  }
 
-
-.welcome_btn{
- display: flex;
- justify-content: space-between;
- padding: 0;
- margin: 0;
- text-align: center;
-
-}
-
-li.welcome_sozial_item, .welcome_btn_item{
+li.welcome_sozial_item{
   display: inline-block;
   list-style: none;
   padding: 0;
-}
-
-.btn-green{
-  display: inline-block;
-  background-color: rgba(8, 172, 153, 0.5);
-  padding: 12px 37px;
-  color: #fff;
-}
-
-.btn-green:hover{
-  background-color: rgba(6, 137, 129, 0.5);
-}
-
-
-.login_container  {
- 
- .btn-green{
-  display: inline-block;
-  background-color: rgba(8, 172, 153, 0.5);
-  padding: 12px 36px;
-  width: 189px;
-  font-weight: 550;
-}
-.btn-green:hover{
-  background-color: rgba(6, 137, 129, 0.5);
-} 
-
 }
 
  .entry_link{
@@ -98,62 +75,6 @@ li.welcome_sozial_item, .welcome_btn_item{
  }
 
 
-form{
-  text-align: center;
-}
 
-input.login {
-background-image: url('/assets/img/icons/login.svg');
-background-repeat: no-repeat;
-background-size: 15px 15px;
-background-position: 15px center;
-width: 340px;
-border-radius: 5px;
-padding-left: 5px;
-height: 45px;
-border-radius: 5px;
-padding-left: 60px;
-border: none;
-position: relative;
-} 
-
-input.pass {
-background-image: url('/assets/img/icons/password.svg');
-background-position: 15px center;
-background-size: 15px 15px;
-background-repeat: no-repeat;
-width: 340px;
-border-radius: 5px;
-padding-left: 5px;
-height: 45px;
-border-radius: 5px;
-padding-left: 60px;
-border: none;
-
-}
-.legend{
-  font-family: "bernier_regularregular";
-  margin: 30px auto;
-  text-transform: uppercase;
-  font-size: 35px;
-  color: #455a64;
-}
-
-.legend:after,  .legend:before {
-    content: "-";
-    display: inline-block;
-    color: #c5cbcd;
-    padding: 10px;
-}
-
-label{
-  font-family: "roboto";
-  font-size: 16px;
-  color: #667780;
-}
-.chek_label{
-  font-weight: bold;
-  color:#455a64;
-}
 
 

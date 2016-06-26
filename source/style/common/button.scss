@@ -1,0 +1,51 @@
+.welcome_btn{
+ display: flex;
+ justify-content: space-between;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+}
+
+li.welcome_sozial_item, .welcome_btn_item{
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.btn-green{
+  display: inline-block;
+  background-color: rgba(8, 172, 153, 0.5);
+  padding: 12px 37px;
+  color: #fff;
+}
+
+.btn-green:hover{
+  background-color: rgba(6, 137, 129, 0.5);
+}
+
+.login_container  {
+ 
+ .btn-green{
+  display: inline-block;
+  background-color: rgba(8, 172, 153, 0.5);
+  padding: 12px 36px;
+  width: 189px;
+  font-weight: 550;
+}
+.btn-green:hover{
+  background-color: rgba(6, 137, 129, 0.5);
+} 
+
+}
+
+ .login_wrap {
+    .btn-green{
+      display: inline-block;
+      background-color: rgba(8, 172, 153, 0.5);
+      padding: 12px 36px;
+      width: 189px;
+}
+    .btn-green:hover {
+      background-color: rgba(6, 137, 129, 0.5);
+} 
+ }
