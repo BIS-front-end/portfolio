@@ -1,12 +1,60 @@
-.works_title{
-	text-align: center;
-	text-transform: uppercase;
-	margin: 70px;
-	font-family: "bernier_regularregular";
-	font-size: 63px;
+.works_wrap {
+
+.avatar_pref{
+  color: #fff;
+}
+
+
+}
+
+
+h1.title {
+  font-family: "bernier_regularregular";
+  text-transform: uppercase;
+  font-size: 63px;
+  color: #373e42;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  min-height: 184px;
+  margin: 0;
+  
+display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+h1.title:after,  h1.title:before , .skills_title:after, .skills_title:before{
+    content: "-";
+    display: inline-block;
+    color: #c5cbcd;
+    padding: 10px;
+}
+.title_works{
 	background: url("/assets/img/icons/works_header.svg") no-repeat center;
 	background-size: auto;
 }
+.title_speak{
+	background: url("/assets/img/icons/about_header.svg") no-repeat center;
+	background-size: auto;
+}
+
+.skills_title {
+	color: #455a64;
+	font-size: 35px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.skills {
+	font-size: 16px;
+	color: #00bfa5;
+	padding: 20px 0;
+	text-transform: uppercase;
+	border-top: 1px solid #00bfa5;
+	border-bottom: 1px solid #00bfa5;
+	margin-bottom: 30px;
+}
+
 
 .box_works {
   fill:#fff;
@@ -14,7 +62,7 @@
 }
 
 
-//
+
 .slider {
 	background: #f0efe9;
 	height: 100vh;
@@ -42,24 +90,6 @@
 	vertical-align: middle;
 	max-width: 90%;
 }
-
-.title {
-	color: #455a64;
-	font-size: 35px;
-	margin-bottom: 30px;
-}
-
-.skills {
-	font-size: 16px;
-	color: #acd6ce;
-	padding: 20px 0;
-	text-transform: uppercase;
-	border-top: 1px solid #acd6ce;
-	border-bottom: 1px solid #acd6ce;
-	margin-bottom: 30px;
-}
-
-
 
 .slider__right {
 	background: #efebe0;
@@ -117,58 +147,56 @@
 }
 
 
-/* 
-Николай  */
-
 .people {
     padding-top: 30px;
+    background: url("/assets/img/water.jpg") no-repeat center;
     background-size: cover;
-    background: url("/assets/img/water.jpg") no-repeat bottom #f0e6d2;
+    min-height: 1280px;
+    overflow: hidden;
+    width: 100%;
+    position: relative; 
 }
+
+.feedback_quotes {
+    color: #d6d8d8;
+    font-size: 120px;
+    line-height: 30px;
+    letter-spacing: -0.7rem;
+    font-family: "Times New Roman";
+    margin: 0;
+    padding-top: 30px;
+}
+
+
 .feedback_box {
     width: 780px;
     margin: 0 auto 70px;
 }
+
 .people .feedback_item {
     width: 380px;
-    margin-right: 10px;
     float: left;
     }
+
+ .people .feedback_item:first-child{
+ margin-right: 20px;
+   
+ }
  .people .feedback_text {
     font: 1rem 'robotoregular';
     color: #5d5a55;
     line-height: 1.65rem;
     margin-bottom: 21px;
 }
-.heading_box.lower {
-    height: 170px;
-    background: url("/assets/img/icons/about_header.svg") no-repeat center;
-}
 
-.heading_box {
-    width: 510px;
-    color: #373e42;
-    text-align: center;
-    margin: 0 auto -15px;
-    text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    }
-.feedback_quotes {
-    color: #E9D5B1;
-    font-size: 7rem;
-    font-family: "Times New Roman";
-    margin-bottom: 2px;
-    letter-spacing: -0.7rem;
-    margin-left: -8px;
-}
 .people .form_box {
     width: 380px;
     height: 440px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.3);
     margin: auto;
-    padding-top: 27px;
 }
+
 .people .form_box .form_heading .heading_item.heading-text {
     margin: 0 0px;
     text-align: center;
@@ -196,6 +224,22 @@
     color: #20b5a1;
 }
 
+.person_ava, .person_name{
+	display: inline-block;
+}
+.person_ava{
+	float: left;
+}
+.person_name{
+	padding-left: 20px;
+}
+.name{
+	font: 1rem 'robotobold';
+	font-weight: bold;
+}
+.positioin{
+	font: 1rem 'robotoregular';
+}
 .person_ava img{
 	border-radius: 50% 50%;
 }
@@ -203,8 +247,5 @@
 textarea.form_item.yourmessage{
 	height: 140px;
 }
- .heading_box .heading-text {
-    text-align: center;
-    font: 3.9375rem 'sansus_webissimoregular';
-    margin: 0 13px;
-}
+
+

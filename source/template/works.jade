@@ -58,16 +58,17 @@ html
                 <polygon points="1000,0   1000,86   530,86   500,75.5"></polygon>
                 </svg>
       .works
-        h1.heading_item.heading-text Мои работы
+        h1.title.title_works Мои работы
         section.slider.clearfix
             div.slider__left
                 div.slider__display
                     img(src="assets/img/slider_big.jpg" alt="")
                 div.slider__info
-                    div.title Сайт школы онлайн образования
+                    div.skills_title Сайт школы онлайн<br> образования
                     div.skills html, css, javascript
-                    div.slider__btn
-                        a.btn(href="#") Посмотреть сайт
+                    .info_button
+                      a(href="index.html" class="skills_btn button_link clearfix") Посмотреть сайт
+                      div.button_icon            
             div.slider__right
                 div.slider__controls
                     a(href="" class="slider__controls-item slider__controls-item_prev")
@@ -76,7 +77,8 @@ html
                         img(src="assets/img/icons/portf_arrow_up.svg" alt="")
       .people
             .heading_box.lower
-              .heading_item.heading-text Что обо мне<br>говорят
+              h1.title.title_speak 
+                Что обо мне<br>говорят
             .feedback_box.clearfix
               .feedback_item
                 .feedback_quotes &#145;&#145;
@@ -110,7 +112,7 @@ html
                     li.welcome_btn_item
                       button.reset(type="reset" value="Очистить" class="btn btn-green") Очистить
       footer.footer
-      .footer_content.clearfix
+        .footer_content.clearfix
         .footer_copy
           .footer_copy_loft Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.
           .footer_copy_copy.opacity-5
@@ -145,4 +147,4 @@ html
           .contacts_box
             a.contacts_link(href="tel:+7 931 200 93 24") +7 931 200 93 24
           .contacts_box Новосибирск, ул. Инская, д.14
-      footer.footer
+      

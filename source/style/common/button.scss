@@ -26,8 +26,6 @@ li.welcome_sozial_item, .welcome_btn_item{
 .login_container  {
  
  .btn-green{
-  display: inline-block;
-  background-color: rgba(8, 172, 153, 0.5);
   padding: 12px 36px;
   width: 189px;
   font-weight: 550;
@@ -49,3 +47,31 @@ li.welcome_sozial_item, .welcome_btn_item{
       background-color: rgba(6, 137, 129, 0.5);
 } 
  }
+
+.skills_btn {
+    width: 199px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #00bfa5;
+    position: relative;
+    margin: auto;
+    display: block; 
+    line-height: 45px; 
+}
+.skills_btn a{
+   color: #fff;
+   padding: 11px 0 0 50px;
+   font: 1rem "robotomedium";
+}
+.skills_btn:hover{
+  background-color: rgba(6, 137, 129, 0.5);
+}
+.button_icon {
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: url("/assets/img/icons/link.svg") no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
