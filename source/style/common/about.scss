@@ -96,7 +96,7 @@ text-align: center;
 
     .left {
         width: 420px;
-        margin-left: 47px;
+        margin-left: 90px;
         background: url('../img/1800_about-bg-2.jpg') no-repeat bottom;
         float: left;
        
@@ -192,18 +192,43 @@ text-align: center;
         .center_text p {
             font: 1rem/1.5 'robotoregular';
             color: #5d5a55;
-            padding-right: 10px;
+            padding-right: 20px;
             margin-bottom: 10px;
         }
     }
 
      // Content right
+    .about_wrap{
 
-     .right {
-        width: 590px;
-        margin-left: 60px;
+        h1.title {
+  font-family: "bernier_regularregular";
+  text-transform: uppercase;
+  font-size: 63px;
+  color: #373e42;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  display: inline-block;
+}
+
+   .title_speak{
+    background: url("/assets/img/icons/about_header_2.svg") no-repeat center;
+    background-size: cover;
+}
+
+
+    }
+
+    .content_section{
+        background-color:#efeee9; 
+    }
+   
+
+
+     .content_section.right {
+        width: 50%;
         float: right;
-        
+
+
         .pusher {
             height: 10px;
         }
@@ -386,4 +411,32 @@ text-align: center;
 
 
 
-   
+   h1.title:after,  h1.title:before , .skills_title:after, .skills_title:before{
+    content: "-";
+    display: inline-block;
+    color: #c5cbcd;
+    padding: 10px;
+}
+
+
+
+.skills_title {
+    color: #455a64;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.skills {
+    font-size: 16px;
+    color: #00bfa5;
+    padding: 20px 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+.box_works {
+  fill:#fff;
+  font-size: 0;
+}
