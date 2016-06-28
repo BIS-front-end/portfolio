@@ -45,12 +45,7 @@ header .avatar{
   padding-top: 10px;
   font-family: "roboto", "Arial Narrow", sans-serif;
 }
-.avatar_pref{
-  color: #fff;
-  margin: 0;
-  opacity: 0.7;
-  font-family: "roboto", "Arial Narrow", sans-serif;
-}
+
 .avatar_foto-wrap
 {
 width: 150px;
@@ -208,6 +203,13 @@ text-align: center;
   letter-spacing: 0.08rem;
   text-align: center;
   display: inline-block;
+}
+
+.avatar_pref{
+  color: #fff;
+  margin: 0;
+  opacity: 0.7;
+  font-family: "roboto", "Arial Narrow", sans-serif;
 }
 
    .title_speak{
