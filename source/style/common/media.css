@@ -1,0 +1,41 @@
+@media screen and (max-width: 1800px) { //hd
+	html {
+		font-size: 16px;
+	}
+
+	.container, .about_wrap, .login_wrap, .works_wrap, .blog_wrap, .welcome_wrap{
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 1200px) { //laptop
+	html {
+		font-size: 15px;
+	}
+
+	.container, .about_wrap, .login_wrap, .works_wrap, .blog_wrap, .welcome_wrap{
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 768px) { //tablets
+	html {
+		font-size: 14px;
+	}
+
+	.container, .about_wrap, .login_wrap, .works_wrap, .blog_wrap, .welcome_wrap{
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 480px) { //phones
+	html {
+		font-size: 12px;
+	}
+
+	.container, .about_wrap, .login_wrap, .works_wrap, .blog_wrap, .welcome_wrap{
+		width: auto;
+	}
+}

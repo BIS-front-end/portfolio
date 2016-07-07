@@ -1,0 +1,59 @@
+
+.flip_effect_horizontal {
+/* общие стили */
+width:240px; /* ширина блока с flip */
+height:240px; /* высота блока с flip */
+position: relative; /* позиционируем для дочерних блоков */
+ 
+transition:1s; /* скорость поворота */
+transform-style: preserve-3d; /* стиль трансформирования 3-д */
+ 
+/* для поддержки webkit */
+-webkit-transition:1s;
+-webkit-transform-style: preserve-3d;
+-webkit-transform: rotateY(0deg);
+ 
+/* для поддержки moz */
+-moz-transition:1s;
+-moz-transform-style: preserve-3d;
+-moz-transform: rotateY(0deg);
+ 
+}
+ 
+ 
+.flip_effect_horizontal .front {
+/* общие стили */
+position: absolute; /* абсолютное позиционирование */
+width: 100%; /* на всю ширину родительского блока */
+height: 100%; /* на всю высоту родительского блока */
+background: #FF6600; /* цвет фона */
+backface-visibility: hidden; /* скрываем контент, который отвернут от пользователя */
+
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+}
+
+.flip_effect_horizontal .back {
+position: absolute; 
+width: 100%; /* на всю ширину родительского блока */
+height: 100%; /* на всю высоту родительского блока */
+background:#00CC00; /* цвет фона */
+backface-visibility: hidden; /* скрываем контент, который отвернут от пользователя */
+transform: rotateY(180deg); /* отворачиваем задний блок */
+
+/* для поддержки webkit */
+-webkit-backface-visibility: hidden;
+-webkit-transform: rotateY(180deg);
+/* для поддержки moz */
+-moz-backface-visibility: hidden;
+-moz-transform: rotateY(180deg);
+}
+
+.flip_effect_horizontal:hover {
+/* общие стили */
+transform: rotateY(180deg); /* поворачиваем на 180 градусов по горизонтали */
+/* для поддержки webkit */
+-webkit-transform: rotateY(180deg);
+/* для поддержки moz */
+-moz-transform: rotateY(180deg);
+}

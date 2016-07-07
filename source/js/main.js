@@ -1,11 +1,12 @@
-var express = require ('express');
+var fs = require('fs');
+var express = require('express');
 var app = express();
 
-app.get('/index.html', function (){
-	console.log('получен','index.html');
-     res.write('123');
-     res.end();
-
+app.get('/*', function(req, res) {
+	console.log ('получен запрос по адресу', req.url);
+	var content = fs.readFileSync('build\index.html', {encoding:'utf8'});
+	res.write(content);
+	res.end();
 });
 
 app.listen(9999);
