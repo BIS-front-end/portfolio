@@ -1,37 +1,20 @@
 .works_wrap {
 
-.avatar_pref{
+
+
+
+.avatar_pref {
   color: #fff;
 }
 
 h1.title {
   font-family: "bernier_regularregular";
   text-transform: uppercase;
-  font-size: 63px;
   color: #373e42;
   text-align: center;
   letter-spacing: 0.08rem;
-  min-height: 184px;
   margin: 0;
-  
-display: flex;
- justify-content: center;
- align-items: center;
 }
-
-.title_works{
-    background: url("/assets/img/icons/works_header.svg") no-repeat center;
-    background-size: auto;
-}
-
-.title_speak{
-    background: url("/assets/img/icons/about_header.svg") no-repeat center;
-    background-size: auto;
-}
-
-}
-
-
 
 .slider {
 	background: #f0efe9;
@@ -76,7 +59,23 @@ display: flex;
 	right: 0;
 	height: 25%;
 }
+h1.title {
+  font-size: 63px;
+  min-height: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.title_works{
+    background: url("/assets/img/icons/works_header.svg") no-repeat center;
+    background-size: auto;
+}
+
+.title_speak {
+    background: url("/assets/img/icons/about_header.svg") no-repeat center;
+    background-size: auto;
+}
 .slider__controls-item {
 	display: block;
 	float: left;
@@ -115,8 +114,6 @@ display: flex;
 		max-height: 90%;
 	}
 }
-
-
 .people {
     padding-top: 30px;
     background: url("/assets/img/water.jpg") no-repeat center;
@@ -234,5 +231,48 @@ textarea.form_item.yourmessage{
 	opacity:0.5;
 }
 
+}
 
 
+
+//works 2 style
+
+
+
+
+@media (min-width: 1200px){ //media start
+	.works_wrap { //ww start
+} //ww end
+} //media end
+
+@media  (min-width: 780px) and (max-width:1199px) {  //media start
+	.works_wrap { //ww start
+		header.header{
+			background: url('/assets/img/icons/portfolio_header.svg') no-repeat center, url('/assets/img/header.jpg') no-repeat center;
+  			min-height: 600px;
+ 		    position: relative;
+		}
+} //ww end
+} //media end
+
+@media   (min-width: 480px) and (max-width:799px){ //media start
+	.works_wrap { //ww start
+			header.header{
+			background:  url('/assets/img/header.jpg') no-repeat center;
+  			min-height: 507px;
+ 		    position: relative;
+
+		}
+} //ww end
+} //media end
+
+@media (min-width: 320px){ //media start
+	.works_wrap { //ww start
+		header.header{
+			background:  url('/assets/img/header.jpg') no-repeat center;
+  			min-height: 560px;
+ 		    position: relative;
+		}
+} //ww end
+
+} //media end

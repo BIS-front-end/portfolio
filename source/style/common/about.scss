@@ -30,14 +30,8 @@ footer {
   margin-right: 30px;
 }
 
-header .avatar{
-  text-align: center;
-  position: absolute;
-  bottom: 150px;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-}
+
  .avatar_name{
   font-size: 35px;
   color: #fff;
@@ -194,7 +188,13 @@ text-align: center;
 
      // Content right
     .about_wrap{
-
+header .avatar{
+  text-align: center;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
         h1.title {
   font-family: "bernier_regularregular";
   text-transform: uppercase;
